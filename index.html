@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grados Musicales</title>
+	<link rel="stylesheet" href="../assets/main.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="main">
+		<div class="final none" id="final">
+			<div class="capsula">	
+				<p id="porcentaje">90%</p>
+				<div class="fail">
+					<p class="lbl">Errores: </p>
+					<p id="errores">2</p>			
+				</div>
+			</div>
+		</div>
+		<div class="flechas" id="invertir">
+			<img src="Flechas.png" alt="" class="invertir">
+		</div>
+		<p id="aciertos">0</p>
+		<div class="grados">
+			<p id="pregunta">G</p>
+			<p id="grado">B</p>
+		</div>
+		<div class="botones">
+			<div class="vertical">
+				<div class="fila1">
+				    <div class="boton" id="0" class="icon">I</div>
+					<div class="boton" id="1" class="icon">II</div>
+					<div class="boton" id="2" class="icon">III</div>
+				</div>
+				<div class="fila2">
+					<div class="boton" id="3" class="icon">IV</div>
+					<div class="boton" id="4" class="icon">V</div>
+					<div class="boton" id="5" class="icon">VI</div>
+				</div>
+				<div class="fila3">
+					<div class="boton" id="6" class="icon">VII</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio src="../assets/correcto.wav" id="correcto"></audio>
+	<audio src="../assets/incorrecto.wav" id="incorrecto"></audio>
+	<audio src="swap.wav" id="swap"></audio>
+	<script src="script.js"></script>
+	<script src="../../script.js"></script>
+</body>
+</html>
